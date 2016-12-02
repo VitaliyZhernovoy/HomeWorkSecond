@@ -224,8 +224,9 @@ public class HomeWork2 {
             }
             count++;
         }
-
-        while (count > array.length) {
+        
+            count = 0;
+        while (count < array.length) {
             if ((array[count] > max2) && (array[count] < max1))  {
                 max2 = array[count];
             }
