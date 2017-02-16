@@ -47,7 +47,7 @@ public class HomeWork2 {
     }
 
 
-    static int sum(int[] array) {
+    public static int sum(int[] array) {
 
         int sum = 0;
 
@@ -63,7 +63,7 @@ public class HomeWork2 {
 
     }
 
-    static double sum(double[] array) {
+    public static double sum(double[] array) {
 
         double sum = 0;
 
@@ -77,7 +77,7 @@ public class HomeWork2 {
         return sum;
     }
 
-    static int min(int[] array) {
+    public static int min(int[] array) {
         int min = 0;
         for (int i = 0; i < array.length; i++) {
             if (min > array[i]) min = array[i];
@@ -88,7 +88,7 @@ public class HomeWork2 {
 
     }
 
-    static double min(double[] array) {
+    public static double min(double[] array) {
         double min = 0;
         for (int i = 0; i < array.length; i++) {
             if (min > array[i]) min = array[i];
@@ -99,7 +99,7 @@ public class HomeWork2 {
         return min;
     }
 
-    static int max(int[] array) {
+    public static int max(int[] array) {
         int max = 0;
         for (int i = 0; i < array.length; i++) {
             if (max < array[i]) max = array[i];
@@ -110,7 +110,7 @@ public class HomeWork2 {
 
     }
 
-    static double max(double[] array) {
+    public static double max(double[] array) {
         double max = 0;
         for (int i = 0; i < array.length; i++) {
             if (max < array[i]) max = array[i];
@@ -121,7 +121,7 @@ public class HomeWork2 {
         return max;
     }
 
-    static int imax(int[] array) {
+    public static int imax(int[] array) {
         int maxPositive = 0;
         for (int i = 0; i < array.length; i++) {
             if (maxPositive < array[i]) maxPositive = array[i];
@@ -132,7 +132,7 @@ public class HomeWork2 {
 
     }
 
-    static double dmax(double[] array) {
+    public static double dmax(double[] array) {
         double maxPositive = 0;
         for (int i = 0; i < array.length; i++) {
             if (maxPositive < array[i]) maxPositive = array[i];
@@ -144,7 +144,7 @@ public class HomeWork2 {
 
     }
 
-    static int multiplication(int[] array) {
+    public static int multiplication(int[] array) {
         int multiplication = 1;
         for (int element : array) {
             multiplication = multiplication * element;
@@ -155,7 +155,7 @@ public class HomeWork2 {
 
     }
 
-    static double multiplication(double[] array) {
+    public static double multiplication(double[] array) {
         double multiplication = 1;
         for (double element : array) {
             multiplication = multiplication * element;
@@ -167,18 +167,18 @@ public class HomeWork2 {
 
     }
 
-    static double modulus(double[] array) {
+    public static double modulus(double[] array) {
         double modulus = 0;
         for (double element : array) {
             modulus = array[0] % array[array.length - 1];
         }
-        System.out.println("Деление по модулю первое число на второе массива donble = " + modulus);
+        System.out.println("Деление по модулю первое число на второе массива double = " + modulus);
         System.out.println();
         return modulus;
 
     }
 
-    static int modulus(int[] array) {
+    public static int modulus(int[] array) {
         int modulus = 0;
 
         for (int element : array) {
@@ -193,7 +193,7 @@ public class HomeWork2 {
 
     }
 
-    static int secondLargest(int[] array) {
+    public static int secondLargest(int[] array) {
         int max1 = array[0];
         int max2 = array[0];
         int count = 0;
@@ -214,7 +214,7 @@ public class HomeWork2 {
 
     }
 
-    static double dSecondLargest(double[] array) {
+    public static double dSecondLargest(double[] array) {
         double max1 = 0;
         double max2 = 0;
         int count = 0;
@@ -224,8 +224,13 @@ public class HomeWork2 {
             }
             count++;
         }
+
         
             count = 0;
+
+
+        count = 0;
+
         while (count < array.length) {
             if ((array[count] > max2) && (array[count] < max1))  {
                 max2 = array[count];
